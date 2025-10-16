@@ -313,7 +313,7 @@ Recent
 
 #recent {
    padding-top: 8vw;
-   background-color: rgba(226, 223, 232, 0.1); 
+   background-color: rgba(220, 216, 228, 0.1); 
 }
 
 .books {
@@ -370,10 +370,13 @@ EXPLORE
 */
 
 #explore {
-   padding-top: 8vw;
-   background-color: rgba(226, 223, 232, 0.1); 
+   background-color: rgba(115, 66, 214, 0.1); 
 }
 
+
+#explore .btn:hover {
+    background-color: #5a2db8;
+}
 #explore .btn {
     display: flex;
     justify-content: center;
@@ -384,16 +387,13 @@ EXPLORE
     background-color: #7342d6;
     color: white;
     border: none;
-
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 
-#explore .btn:hover {
-    background-color: #5a2db8;
-}
+
 
 /*
 
@@ -401,3 +401,20 @@ FOOTER
 
 */
 
+#footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.footer__container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.logo {
+    max-width: 160px;
+}
