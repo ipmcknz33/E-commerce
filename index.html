@@ -19,14 +19,25 @@
                     <li><a href="#" class="nav__link">Contact</a></li>
                     <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
                 </ul>
+            </div>
                 <button class="btn__menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
+                 <i class="fas fa-bars"></i>
                 </button>
                 <div class="menu__backdrop">
                         <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                             <i class="fas fa-times"></i>
                         </button>
-                    </div>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#" class="no-cursor" onclick="closeMenu()">Contacts</a>
+                            </li>
+                        </ul>
                 </div>
             </nav>
             <header>
@@ -334,29 +345,44 @@
      <section id="explore">
          <div class="container">
            <div class="row">
+          
             <h2 class="section__title">Explore More<span class="purple"> Books</span></h2>
              
             <a href="#features">
                     <button class="btn">Browse books</button>
                         </a>
+                    
             </div>
          </div>
      </section>
 
     </main>
 
-    <section id="footer">
+    <footer>
         <div class="footer__container">
-            <div class="row">
-                <div class="logo"></div>
-                <figure>
-                    <img src=".assets/Library.svg" class="" alt="Your Bookstore Logo">
+            <div class="row row__column">
+                <a>
+                <figure class="footer__logo">
+                    <img src=".assets/Library.svg" class="footer__logo--img" alt="Your Bookstore Logo">
                 </figure>
-                <p>&copy; 2024 Your Bookstore. All rights reserved.</p>
-                
+                </a>
+                <a>
+                <div class="footer__list">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">About</a>
+                    <a href="#" class="footer__link">Books</a>
+                    <a href="#" class="footer__link">Contact</a>
+                    </div>
+                    </a>
+                </div>
+               </a>
             </div>
         </div>
-    </section>
+                 <div class="footer__copyright">&copy; 2025 Library. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
