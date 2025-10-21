@@ -21,6 +21,7 @@ nav {
 
 img {
     width: 100%;
+    max-height: 50vh;
 }
 
 p {
@@ -243,7 +244,7 @@ HIGHLIGHTS
 
 #highlights::after,
 #highlights::before {
-    background: url('.assets/wave (1).svg');
+    background: url('./assets/assets/wave.svg');
     content: "";
     position: absolute;
     width: 101vw;
@@ -311,7 +312,26 @@ FEATURED
 
 #features {
    padding-top: 8vw;
+   padding-bottom: 8vw;
    background-color: rgba(115, 66, 214, 0.1); 
+   position: relative;
+}
+
+#features::after {
+    bottom: 120px;
+    transform: translateY(100%);
+}
+
+#features::after {
+    background: url('./assets/assets/wave.svg');
+    content: "";
+    width: 100vw;
+    height: 12vw;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .books {
@@ -367,8 +387,8 @@ Recent
 */
 
 #recent {
-   padding-top: 8vw;
-   background-color: rgba(220, 216, 228, 0.1); 
+   padding-top: 2vw;
+   background: linear-gradient(#fff, rgba(220, 216, 228, 0.1));
 }
 
 .books {
@@ -425,13 +445,40 @@ EXPLORE
 */
 
 #explore {
-   background-color: rgba(115, 66, 214, 0.1); 
+   background-color: #fff;
+   position: relative;
 }
 
 
 #explore .btn:hover {
     background-color: #5a2db8;
 }
+
+#explore::before {
+    top: -1px;
+    transform: translateY(-100%)
+}
+
+#explore::after {
+    color: rgba(115, 66, 214, 0.1);
+    bottom: 1px;
+    transform: translateY(100%) rotate(180deg);
+    
+}
+
+#explore::before,
+#explore::after {
+    position: absolute;
+    background: url('./assets/assets/wave.svg');
+    content: "";
+    width: 101vw;
+    height: 12vw;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}  
 
 #explore .btn {
     display: flex;
@@ -440,7 +487,7 @@ EXPLORE
     margin: 0 auto;
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #7342d6;
+    background-color: #7342d5;
     color: white;
     border: none;
     border-radius: 4px;
@@ -455,9 +502,9 @@ FOOTER
 */
 
 footer {
-    background-color: #2c2c2c;
+    background-color: #242424;
     color: white;
-    padding: 24px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -470,8 +517,6 @@ footer {
 .footer__link,
 .footer__copyright {
   color: white;
-  
-  
 }
 
 .footer__list {
@@ -479,9 +524,75 @@ footer {
 }
 
 .footer__link {
-    padding: 0 0 8px 0;
+    padding: 0 8px 0;
 }
 
 .footer__link:hover {
     text-decoration: underline;
+}
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .book {
+    width: 50%;
+  }
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .book {
+    width: 50%;
+  }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
