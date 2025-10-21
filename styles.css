@@ -61,6 +61,14 @@ button {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #5a2db8;
+}
+
+.btn:active {
+    background-color: #4a2398;
+}
+
 button:active {
     transform: translateY(1px);
 }
@@ -318,7 +326,7 @@ FEATURED
 }
 
 #features::after {
-    bottom: 120px;
+    bottom: 118px;
     transform: translateY(100%);
 }
 
@@ -504,7 +512,7 @@ FOOTER
 footer {
     background-color: #242424;
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
@@ -531,6 +539,25 @@ footer {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  #highlights::after,
+  #highlights::before,
+  #features::after,
+  #explore::before,
+  #explore::after {
+    height: 20vw; /* Increase from 12vw to 20vw on smaller screens */
+  }
+}
+
+@media (max-width: 550px) {
+  #highlights::after,
+  #highlights::before,
+  #features::after,
+  #explore::before,
+  #explore::after {
+    height: 25vw;  /* Even larger on mobile */
+  }
+}
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
