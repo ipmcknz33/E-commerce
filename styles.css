@@ -326,8 +326,9 @@ FEATURED
 }
 
 #features::after {
-    bottom: 118px;
+    bottom: 100px;
     transform: translateY(100%);
+
 }
 
 #features::after {
